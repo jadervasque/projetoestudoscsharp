@@ -1,9 +1,6 @@
-﻿using Aula118.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Aula118.Entities;
+using Aula118.Views;
 
 namespace Aula118
 {
@@ -11,8 +8,14 @@ namespace Aula118
     {
         static void Main(string[] args)
         {
-
-
+            var worker = new Worker();
+            worker.Department = Messages.EnterDepartmentName();
+            Messages.EnterWorkerData(ref worker);
+            worker.Contracts = Messages.EnterContracts(Messages.EnterNumberContracts());
+            Console.WriteLine();
+            Messages.PrintIncome(worker);
         }
+
+
     }
 }
