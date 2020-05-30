@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosURI", "Exercicios\ExerciciosURI.csproj", "{C9236D56-22C3-4E85-BF41-14758C5631B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosURI", "ExerciciosURI\ExerciciosURI.csproj", "{C9236D56-22C3-4E85-BF41-14758C5631B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosCursoCSharp", "ExerciciosCursoCSharp\ExerciciosCursoCSharp.csproj", "{429C34A6-1CFA-47A5-8223-BE8FBB67D713}"
 EndProject
