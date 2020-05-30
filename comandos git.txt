@@ -1,3 +1,6 @@
+TESTE TESTE TESTE
+
+
 Inicializar Git:
 	git init
 
