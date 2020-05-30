@@ -6,6 +6,7 @@ namespace Aula118.Entities
     {
         public string Name { get; set; }
         public double BaseSalary { get; set; }
-        internal WorkerLevel Level { get; set; }
+        public WorkerLevel Level { get; set; }
+        public Department Department { get; set; }
     }
 }
