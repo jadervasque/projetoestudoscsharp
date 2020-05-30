@@ -1,6 +1,3 @@
-TESTE TESTE TESTE
-
-
 Inicializar Git:
 	git init
 
@@ -16,10 +13,10 @@ Atualizar versao:
 	git commit -m ""
 
 Adicionar ao GitHub:
-	git remote add origin <URI do reposit¢rio remoto>
+	git remote add origin <URI do repositÂ¢rio remoto>
 
 Clonar GitHub:
-	git clone <URI do reposit¢rio remoto>
+	git clone <URI do repositÂ¢rio remoto>
 
 Upload arquivos:
 	git push -u origin master
@@ -33,17 +30,17 @@ Verificar logs:
 	git log --oneline
 
 Navegar entre commits, alterando os arquivos temporariamente:
-	git checkout <c¢digo do commit>
+	git checkout <cÂ¢digo do commit>
 
-Voltar para o £ltimo commit:
+Voltar para o Â£ltimo commit:
 	git checkout <nome do branch> (master)
 
-Remover o £ltimo commit mantendo as altera‡oes nos arquivos:
+Remover o Â£ltimo commit mantendo as alteraâ€¡oes nos arquivos:
 	git reset --soft HEAD~1
 
-Remover o £ltimo commit INCLUSIVE as altera‡oes nos arquivos (CUIDADO!):
+Remover o Â£ltimo commit INCLUSIVE as alteraâ€¡oes nos arquivos (CUIDADO!):
 	git reset --hard HEAD~1
 
-Descartar todas modifica‡oes, voltando ao estado do commit atual:
+Descartar todas modificaâ€¡oes, voltando ao estado do commit atual:
 	git clean -df
 	git checkout -- .
