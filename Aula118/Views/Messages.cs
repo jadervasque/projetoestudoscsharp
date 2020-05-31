@@ -106,10 +106,10 @@ namespace Aula118.Views
 
         public static bool RepeatOperation()
         {
-            Console.Write("Deseja realizar a operação novamente? (S/N): ");
+            Console.Write("Do you want to repeat operation? (Y/N): ");
             string yesOrNo;
             yesOrNo = Console.ReadLine().ToUpper();
-            if (yesOrNo == "S") return true;
+            if (yesOrNo == "Y") return true;
             else return false;
         }
     }

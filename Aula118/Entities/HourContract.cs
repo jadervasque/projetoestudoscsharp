@@ -24,6 +24,11 @@ namespace Aula118.Entities
         {
             return ValuePerHour * Hours;
         }
+
+        public override string ToString()
+        {
+            return $"{Date.ToShortDateString()}, ValuePerHour: {ValuePerHour.ToString("F2")}, Hours: {Hours}";
+        }
     }
 
 

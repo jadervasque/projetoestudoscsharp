@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExerciciosURI
 {
@@ -19,7 +15,7 @@ namespace ExerciciosURI
                     Console.WriteLine();
 
 
-                    _1435();
+                    uri();
 
 
                     Console.WriteLine();
@@ -29,8 +25,8 @@ namespace ExerciciosURI
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
-                //Console.ReadLine();
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
             }
         }
 
@@ -38,8 +34,39 @@ namespace ExerciciosURI
         {
 
         }
-
         #region Resolvidos
+        static void _1024()
+        {
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                System.Text.StringBuilder message = new System.Text.StringBuilder(Console.ReadLine());
+                //Somente caracteres que sejam letras minúsculas e maiúsculas devem ser deslocadas 3 posições para a direita
+                for (int j = 0; j < message.Length; j++)
+                {
+                    byte jb = (byte)message[j];
+                    if (jb >= 65 && jb <= 90 || jb >= 97 && jb <= 122)
+                    {
+                        message[j] = (char)(jb + 3);
+                    }
+                }
+                //A linha deverá ser invertida
+                string msg = string.Empty;
+                for (int j = message.Length - 1; j >= 0; j--)
+                {
+                    msg += message[j];
+                }
+                message = new System.Text.StringBuilder(msg);
+                //Todo e qualquer caractere a partir da metade em diante (truncada) devem ser deslocados uma posição para a esquerda na tabela ASCII
+                for (int j = (int)(Math.Truncate((decimal)message.Length) / 2); j < message.Length; j++)
+                {
+                    byte jb = (byte)message[j];
+                    message[j] = (char)(jb - 1);
+                }
+                Console.WriteLine(message.ToString());
+            }
+            Console.ReadKey();
+        }
         static void _1022()
         {
             int n = int.Parse(Console.ReadLine());
@@ -2139,8 +2166,6 @@ namespace ExerciciosURI
             int X = A + B;
             Console.WriteLine("X = " + X);
         }
-        #endregion
-
         #region Matrizes
         static void _m2()
         {
@@ -2224,5 +2249,7 @@ namespace ExerciciosURI
             }
         }
         #endregion
+        #endregion
+
     }
 }
