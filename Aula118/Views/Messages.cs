@@ -108,10 +108,7 @@ namespace Aula118.Views
         {
             Console.Write("Deseja realizar a operação novamente? (S/N): ");
             string yesOrNo;
-            do
-            {
-                yesOrNo = Console.ReadLine().ToUpper();
-            } while (yesOrNo != "S" && yesOrNo != "N");
+            yesOrNo = Console.ReadLine().ToUpper();
             if (yesOrNo == "S") return true;
             else return false;
         }
