@@ -8,14 +8,15 @@ namespace Aula118
     {
         static void Main(string[] args)
         {
-            var worker = new Worker();
-            worker.Department = Messages.EnterDepartmentName();
-            Messages.EnterWorkerData(ref worker);
-            worker.Contracts = Messages.EnterContracts(Messages.EnterNumberContracts());
-            Console.WriteLine();
-            Messages.PrintIncome(worker);
+            do
+            {
+                var worker = new Worker();
+                worker.Department = Messages.EnterDepartmentName();
+                Messages.EnterWorkerData(ref worker);
+                worker.Contracts = Messages.EnterContracts(Messages.EnterNumberContracts());
+                Console.WriteLine();
+                Messages.PrintIncome(worker);
+            } while (Messages.RepeatOperation());
         }
-
-
     }
 }

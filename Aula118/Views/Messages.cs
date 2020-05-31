@@ -52,7 +52,7 @@ namespace Aula118.Views
         public static List<HourContract> EnterContracts(int numberContracts)
         {
             var contracts = new List<HourContract>();
-            for(int i = 1; i <= numberContracts; i++)
+            for (int i = 1; i <= numberContracts; i++)
             {
                 Console.WriteLine($"Enter #{i} contract data:");
                 var contract = new HourContract();
@@ -84,7 +84,7 @@ namespace Aula118.Views
         public static void PrintIncome(Worker worker)
         {
             DateTime? monthYear;
-            while((monthYear = EnterMonthYear()).HasValue)
+            while ((monthYear = EnterMonthYear()).HasValue)
             {
                 Console.WriteLine($"Name: {worker.Name}");
                 Console.WriteLine($"Department: {worker.Department.Name}");
@@ -100,6 +100,20 @@ namespace Aula118.Views
                 Console.WriteLine(str.ToString());
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        public static bool RepeatOperation()
+        {
+            Console.Write("Deseja realizar a operação novamente? (S/N): ");
+            string yesOrNo;
+            do
+            {
+                yesOrNo = Console.ReadLine().ToUpper();
+            } while (yesOrNo != "S" && yesOrNo != "N");
+            if (yesOrNo == "S") return true;
+            else return false;
         }
     }
 }
