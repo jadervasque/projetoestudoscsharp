@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosURI", "Exercicios
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosCursoCSharp", "ExerciciosCursoCSharp\ExerciciosCursoCSharp.csproj", "{429C34A6-1CFA-47A5-8223-BE8FBB67D713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula118", "Aula118\Aula118.csproj", "{2C11B1E7-50EA-4D56-8B54-75170CD84609}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosCursoCSharp_Aula118", "ExerciciosCursoCSharp_Aula118\ExerciciosCursoCSharp_Aula118.csproj", "{2C11B1E7-50EA-4D56-8B54-75170CD84609}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
