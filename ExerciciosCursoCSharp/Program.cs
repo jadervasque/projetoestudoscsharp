@@ -19,9 +19,6 @@ namespace ExerciciosCursoCSharp
                     Console.WriteLine();
 
 
-                    exe();
-
-
                     Console.WriteLine();
                     Console.WriteLine("------------------------ APERTE ENTER PARA CONTINUAR");
                 }
@@ -29,8 +26,8 @@ namespace ExerciciosCursoCSharp
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
-                //Console.ReadLine();
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
             }
         }
 
