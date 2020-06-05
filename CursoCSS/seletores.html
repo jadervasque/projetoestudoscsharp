@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
 
+<!--
+
+    >>> SELETORES <<<
+
+    * ................... universal; seleciona todos as tags;
+    elemento ............ (nome do elemento) seleciona todos as tags com o respectivo nome;
+    .classe ............. seleciona todas as classes com o respectivo nome;
+    #id ................. seleciona todos os ids com o respectivo nome; possui performance maior do que o atributo;
+    [atributo] .......... seleciona todos os atributos com o respectivo nome; mais voltados para trabalhos com javascript;
+
+    :pseudo-classe ...... aplica sobre as classes com a respectiva ação;
+    ::pseudo-elemento ... aplica um seletor diferente, por exemplo first-letter;
+
+    >>> COMBINAR SELETORES <<<
+
+    div + p ............. adjacent sibling (irmãos adjacentes), irmãos que estão dentro de um mesmo pai:
+    div ~ p ............. general sibling (irmão geral);
+    div > p ............. child (filho direto), qualquer elemento que esteja DIRETAMENTE dentro do respectivo elemento;
+    div p ............... descendant (descendente), qualquer elemento que seja descendente do respectivo elemento;
+
+-->
+
 <head>
     <meta charset="UTF-8">
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* p ~ ol : tods os irmãos ol não diretos de p */
+        /* [feira='escritorio empresa'] : o operador = é uma equivalência exata */
+        /* [feira~=escritorio] : o operador ~= equivale a aproximado, e só funciona para palavras inteiras */
+        /* [feira*=sa] : o operador *= equivale a contém, funciona para qualquer parte da string */
+        /* span:nth-child(nº posição) : todos os (nº posição) filhos do respectivo elemento (span) */
+        /* section > :nth-child(odd) : todos os filhos impares (odd) */
+        /* section > :nth-child(odd), ul, p : pode-se utilizar vírgulas após os operadores relacionais */
+        /* section > span:nth-of-type(nº posição) segundo elemento do tipo span */
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
