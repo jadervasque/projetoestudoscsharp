@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+    <title>Um Pouco de CSS</title>
+    <link rel="stylesheet" href="poucoDeCSS.css" />
+    <style>
+        h1 {
+            font-size: 20px;
+        }
+
+        .fundoAmarelo {
+            /* background-color: red; */
+            /* background-color: #ff0000; */
+            /* background-color: rgb(255, 0, 0); */
+            background-color: yellow;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <span id="textoPrincipal" style="display: none">Texto 1</span><br />
+    <span class="fundoAmarelo negrito">Texto 2</span><br />
+    <span class="fundoAmarelo wm-atrib">Texto 3</span>
+</body>
+
+<!--
+Console do navegador:
+    Encontrar objeto com classe específica: document.querySelectorAll('.fundoAmarelo')
+    Encontrar objeto com atributo específico: document.querySelectorAll('[wm-atrib]')
+    Encontrar objeto com id específica: document.querySelectorAll('#textoPrincipal') -->
+
+</html>

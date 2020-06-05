@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        body {
+            font-size: 40px;
+            color: white;
+            background-color: coral;
+        }
+
+        ul {
+            padding: 0;
+            /* display: block; PADRÃO */
+        }
+
+        div {
+            background-color: seagreen;
+        }
+
+        span {
+            background-color: dodgerblue;
+            /* display: inline; PADRÃO */
+        }
+
+        li {
+            background-color: purple;
+            /* display: list-item; PADRÃO */
+        }
+
+        div,
+        span,
+        li {
+            width: 50%;
+            width: 200px;
+            height: 80px;
+            padding-top: 30px;
+            text-align: center;
+            /* O display block faz com que o elemento ocupe uma linha e passa a considerar width e height */
+            /* O display inline faz com que o elemento passe a compor a linha, desconsiderando então width e height */
+            /* O display inline-block une inline com block */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Texto 1</div>
+    <span>Texto 2</span>
+    <span>Texto 3</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>
