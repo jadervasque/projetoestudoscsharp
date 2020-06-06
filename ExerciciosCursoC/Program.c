@@ -15,20 +15,92 @@ void main() {
 	//qtdRepeticoes = scanf("%d", &qtdRepeticoes);
 
 	printf("\n\n");
-	for (int i = 0; i < qtdRepeticoes; i++)
-	{
-		uri();
-		//setlocale(LC_ALL, "");
-		//aula();
+	for (int i = 0; i < qtdRepeticoes; i++) {
+		//uri();
+		setlocale(LC_ALL, "");
+		aula();
 		printf("\n\n");
 	}
 	//pausa o programa após executar
 	//system("pause");
 }
 
-//a33
+//a37
+
 int aula() {
 
+
+}
+
+#define TAM 10
+int a37_Constantes() {
+
+	printf("%d", TAM);
+	int i;
+	for (i = 0; i < TAM; i++) {
+
+	}
+}
+
+int a37_MenusSelecoesSimples() {
+
+	int opcao;
+
+	do {
+		printf("Escolha uma opção: \n");
+		printf("1. Opção A  |  2. Opção B  |  3. Opção C : ");
+		scanf("%d", &opcao);
+		printf("\n");
+
+	} while (opcao < 1 && opcao > 3);
+
+	switch (opcao) {
+	case 1:
+		printf("A Opção 1 foi escolhida.\n");
+		break;
+	case 2:
+		printf("A Opção 2 foi escolhida.\n");
+		break;
+	case 3:
+		printf("A Opção 3 foi escolhida.\n");
+		break;
+	}
+
+}
+
+int a35_For() {
+
+	// incrementando dentro do for
+	int i;
+	for (i = 1; i <= 10; i++) {
+		printf("i = %d\n", i);
+	}
+
+	// incrementando dentro do bloco
+	int j;
+	for (j = 1; j <= 10;) {
+		printf("i = %d\n", j++);
+	}
+}
+
+int a34_DoWhile() {
+	int a = 1;
+	do {
+		printf("a = %d\n", a++);
+	} while (a <= 10);
+}
+
+int a33_While() {
+
+	int a = 1;
+
+	while (a <= 9) {
+		printf("a = %d\n", a++);
+	}
+
+	while (a > 0) {
+		printf("a = %d\n", a--);
+	}
 }
 
 int a32_GerarNumerosAleatorios() {
@@ -65,8 +137,7 @@ int a30_ExercicioFixacao() {
 	scanf("%d", &operacao);
 	printf("\n\n");
 
-	switch (operacao)
-	{
+	switch (operacao) {
 	case 1:
 		resultado = a + b;
 		break;
@@ -108,8 +179,7 @@ int a24_ExercicioFixacao() {
 	printf("\n\n");
 	if (media >= 7) {
 		printf("O aluno foi aprovado.\n\n");
-	}
-	else {
+	} else {
 		printf("O aluno foi reprovado.\n\n");
 	}
 }
@@ -141,8 +211,7 @@ int a22_CondicionaisBoleanas() {
 
 	if (!b) {
 		printf("b é falso.\n\n");
-	}
-	else {
+	} else {
 		printf("b é verdadeiro.\n\n");
 	}
 }
@@ -189,8 +258,7 @@ int a20_CondicionaisSimples() {
 
 	if (a % 2 == 0) {
 		printf("A variável a é par.\n\n");
-	}
-	else {
+	} else {
 		printf("A variável a é impar.\n\n");
 	}
 
@@ -298,8 +366,7 @@ int a10_tiposDeVariaveis_2() {
 	printf("O valor de c mudou para %c \n\n", letra);
 }
 
-int a10_tiposDeVariaveis_1()
-{
+int a10_tiposDeVariaveis_1() {
 	//imprime valor na tela
 	printf("Olá Mundo!!!");
 
@@ -319,6 +386,7 @@ int a10_tiposDeVariaveis_1()
 
 int uri() {
 
+	int a = 1;
 }
 
 int _1038() {
@@ -350,8 +418,7 @@ int _1036() {
 	delta = (b * b) - 4 * a * c;
 	if (a == 0 || delta < 0) {
 		printf("Impossivel calcular\n");
-	}
-	else {
+	} else {
 		r1 = (-b + sqrt(delta)) / (2 * a);
 		r2 = (-b - sqrt(delta)) / (2 * a);
 		printf("R1 = %.5lf\n", r1);
