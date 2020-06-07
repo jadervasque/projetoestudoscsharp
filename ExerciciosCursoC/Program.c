@@ -25,8 +25,18 @@ void main() {
 	//system("pause");
 }
 
-//a37
+//a47
 int aula() {
+
+}
+
+int uri() {
+
+}
+
+#pragma region ExerciciosCurso
+
+int a47_CriarAcessarString() {
 
 	char palavra[255];
 	printf("Digite uma palavra: ");
@@ -388,10 +398,9 @@ int a10_tiposDeVariaveis_1() {
 	printf("O valor de 'a' + 'b' é %d", a + b);
 }
 
-int uri() {
+#pragma endregion
 
-	int a = 1;
-}
+#pragma region URI
 
 int _1038() {
 
@@ -587,3 +596,5 @@ int _1001() {
 	scanf("%d", &b);
 	printf("X = %d\n", a + b);
 }
+
+#pragma endregion
