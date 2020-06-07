@@ -5,7 +5,85 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        /* ... */
+        * {
+            /* border: solid 1px magenta; */
+            box-sizing: border-box;
+            font-weight: 600;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-collapse: collapse;
+            /* padding: 0px; */
+        }
+
+        .curso {
+            /* background-color: aquamarine; */
+            /* display: inline-block; */
+            /* vertical-align: top; */
+            /* margin-bottom: 2px; */
+            float: left;
+            background-color: white;
+            width: 260px;
+            height: 300px;
+            margin: 20px;
+            padding: 5px;
+            box-shadow: 0px 0px 15px #888;
+            position: relative;
+        }
+
+        .curso:hover {
+            box-shadow: 0px 0px 20px #888;
+
+        }
+
+        .curso>img {
+            width: 100%;
+            max-height: 50%; 
+        }
+
+        .curso-info {
+            padding: 8px;
+            height: 90px;
+            overflow: hidden;
+        }
+
+        .curso-info>h4 {
+            font-size: 1.5em;
+            padding: 0;
+            margin: 0;
+            line-height: 1.1em;
+            /* height: 30px; */
+        }
+
+        .curso-info>p {
+            font-size: 1.1em;
+            padding: 0;
+            margin: 10px 0px 2px 0px;
+        }
+
+        .curso-preco {
+            position: absolute;
+            right: 10px;
+            margin: 5px;
+            bottom: 0px;
+            background: white;
+        }
+
+        .preco-de {
+            color: red;
+            text-decoration: line-through;
+            font-size: 1.15em;
+        }
+
+        .preco-por {
+            color: green;
+            font-weight: 800;
+            font-size: 1.7em;
+            margin-left: 5px;
+        }
     </style>
 </head>
 
@@ -13,12 +91,12 @@
     <h1>Card</h1>
 
     <h2>Objetivo</h2>
-    <img src="http://files.cod3r.com.br/curso-web/card.png" height="340" alt="Objetivo">
+    <img src="img/card.png" height="340" alt="Objetivo">
 
     <h2>Resultado</h2>
     <div>
         <div class="curso">
-            <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
+            <img src="img/curso1.jpg" />
             <div class="curso-info">
                 <h4>Docker: Ferramenta essencial para Desenvolvedores</h4>
                 <p>Prof. Fulano</p>
@@ -29,7 +107,7 @@
             </div>
         </div>
         <div class="curso">
-            <img src="http://files.cod3r.com.br/curso-web/curso2.jpg" />
+            <img src="img/curso2.jpg" />
             <div class="curso-info">
                 <h4>Web Moderno com Javascript + Projetos</h4>
                 <p>Prof. Sicrano Filho</p>

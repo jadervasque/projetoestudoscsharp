@@ -26,10 +26,14 @@ void main() {
 }
 
 //a37
-
 int aula() {
 
-
+	char palavra[255];
+	printf("Digite uma palavra: ");
+	setbuf(stdin, 0);
+	fgets(palavra, 255, stdin);
+	palavra[strlen(palavra)-1] = '\0';
+	printf("%s", palavra);
 }
 
 #define TAM 10

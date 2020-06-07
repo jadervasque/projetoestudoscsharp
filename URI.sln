@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosCursoCSharp_Aula1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExerciciosCursoC", "ExerciciosCursoC\ExerciciosCursoC.vcxproj", "{49D40218-7DC7-4F4B-8D58-7339E3498B81}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExerciciosCursoCPP", "ExerciciosCursoCPP\ExerciciosCursoCPP.vcxproj", "{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,16 @@ Global
 		{49D40218-7DC7-4F4B-8D58-7339E3498B81}.Release|x64.Build.0 = Release|x64
 		{49D40218-7DC7-4F4B-8D58-7339E3498B81}.Release|x86.ActiveCfg = Release|Win32
 		{49D40218-7DC7-4F4B-8D58-7339E3498B81}.Release|x86.Build.0 = Release|Win32
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Debug|x64.ActiveCfg = Debug|x64
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Debug|x64.Build.0 = Debug|x64
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Debug|x86.ActiveCfg = Debug|Win32
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Debug|x86.Build.0 = Debug|Win32
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x64.ActiveCfg = Release|x64
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x64.Build.0 = Release|x64
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x86.ActiveCfg = Release|Win32
+		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
