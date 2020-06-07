@@ -33,6 +33,48 @@ void aula() {
 
 }
 
+#pragma region a63_Vetor
+
+void a63_PreencheMatriz(int* vetor, int tamanho) {
+	int i;
+	//percorrendo vetor e preenchendo posições
+	for (i = 0; i < tamanho; i++) {
+		cout << "Entre com o valor da posicao " << i << ": ";
+		cin >> vetor[i];
+	}
+	//adiciona um espaço ao final da operação
+	cout << endl;
+}
+
+void a63_ImprimeVetor(int* vetor, int tamanho) {
+	int i;
+	//percorrendo vetor e imprimindo dados
+	for (i = 0; i < tamanho; i++) {
+		cout << "vetor[" << i << "] = " << vetor[i] << endl;
+	}
+}
+
+void a63_Vetor() {
+
+	//definindo tamanho do vetor
+	int t;
+	cout << "Entre com o tamanho do vetor: ";
+	cin >> t;
+
+	cout << endl;
+
+	//criando um vetor com tamanho t
+	//utilizei o malloc porque t não é constante
+	int* vetor = (int*)malloc(t * sizeof(int));
+
+	//preenchendo vetor
+	a63_PreencheMatriz(vetor, t);
+
+	//imprimindo vetor
+	a63_ImprimeVetor(vetor, t);
+}
+#pragma endregion
+
 #pragma region a62_FuncoesComPonteiros
 void a62_aumentaDez(int *numero) {
 	*numero = *numero + 10;
