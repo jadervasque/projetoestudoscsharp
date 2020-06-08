@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* 
+
+        font-family: 'Merriweather', serif;
+        font-family: 'Roboto', sans-serif;
+
+         */
+
+        * {
+            border: inherit;
+            border-collapse: collapse;
+        }
+
+        body>.colors {
+            height: 50px;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .colors {
+            /* https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+            background-color: #2B2D42;
+            background-color: #8D99AE;
+            background-color: #EDF2F4;
+            background-color: #EF233C;
+            background-color: #D90429;
+        }
+
+        body {
+            background-color: #EDF2F4;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .menu {
+            box-sizing: content-box;
+            background-color: #EDF2F4;
+            position: sticky;
+            top: 0;
+            /* border: solid 0.05px magenta; */
+            /* position: ; */
+            z-index: 100;
+        }
+
+        .menu>.empresa {
+            display: inline-block;
+            height: 100px;
+            /* box-sizing: border-box; */
+            /* margin: 0; */
+            padding: 0 50px;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+
+        }
+
+        .menu .logo {
+            /* display: flex; */
+            /* align-items: center; */
+            /* float: left; */
+            height: 100%;
+            padding: 6%;
+            box-sizing: border-box;
+        }
+
+        .menu img {
+            height: 100%;
+            /* margin: 15px 0px; */
+            box-sizing: border-box;
+        }
+
+        .menu .navigation {
+            /* vertical-align: middle; */
+            height: 70px;
+            padding: 0 50px;
+            background-color: #2B2D42;
+            box-sizing: content-box;
+            /* overflow: hidden; */
+            border-bottom: solid 2px #8D99AE;
+            /* box-shadow: 0px 3px 5px #8D99AE */
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* height: 100%; */
+            overflow: hidden;
+            border: none
+        }
+
+        .menu li {
+            display: inline-block;
+            float: left;
+            /* box-sizing: border-box; */
+            /* height: 100%; */
+            /* margin: 5px; */
+
+        }
+
+        .menu li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #EDF2F4;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: all 200ms;
+            box-sizing: border-box;
+            /* margin: 5px 5px 5px 0px; */
+            height: 60px;
+            padding: 15px;
+            /* background-color: #D90429; */
+            margin: 5px 5px 5px 0px;
+        }
+
+        .menu li a:hover {
+            background-color: #D90429;
+            font-weight: 600;
+        }
+
+        .welcome {
+            margin: 0;
+            height: 500px;
+            background-image:url("img/welcome.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .welcome .text {
+            float: right;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header id="home" class="menu">
+        <div class="empresa">
+            <div class="logo">
+                <a href="#home">
+                    <img src="img/logo.png" alt="floop">
+                </a>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Portifolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="welcome">
+        <div class="text">
+            <p class="welcome-title">Welcome to</p>
+            <p class="company-name">Company Name</p>
+        </div>
+        <img class="background" src="" alt="">
+    </section>
+    <section class="our-team">
+        <div class="content">
+            <div class="section-title">
+                <h2>Our team leaders</h2>
+            </div>
+            <div class="details">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="box-team">
+                <img src="" alt="">
+                <div class="name">
+                    <h3>Hugo Silva</h3>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
+                        efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                </div>
+            </div>
+            <div class="box-team">
+                <img src="" alt="">
+                <div class="name">
+                    <h3>Imanol Arias</h3>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
+                        efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                </div>
+            </div>
+            <div class="box-team">
+                <img src="" alt="">
+                <div class="name">
+                    <h3>Javier Bardem</h3>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
+                        efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-numbers">
+        <div class="content">
+            <div>
+                <p class="number">2500</p>
+                <p class="description">Happy Clients</p>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <p class="number">300</p>
+                <p class="description">Full Notebooks</p>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <p class="number">120</p>
+                <p class="description">Teammates</p>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <p class="number">30</p>
+                <p class="description">Stores</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="content">
+            <div class="section-title">
+                <h2>Our team leaders</h2>
+            </div>
+            <div class="details">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat."</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>>
