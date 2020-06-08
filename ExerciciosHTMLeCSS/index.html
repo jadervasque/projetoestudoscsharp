@@ -16,8 +16,10 @@
          */
 
         * {
-            border: inherit;
+            /* border: inherit; */
             border-collapse: collapse;
+            /* border: solid 0.05px magenta; */
+/*  */
         }
 
         body>.colors {
@@ -29,6 +31,23 @@
             border: none;
         }
 
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin: 0px 0 50px 0;
+            color: #2B2D42;
+            text-shadow: 0.5px 0.5px rgba(141, 153, 174, 0.438);
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+        }
+
         .colors {
             /* https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
             background-color: #2B2D42;
@@ -36,6 +55,12 @@
             background-color: #EDF2F4;
             background-color: #EF233C;
             background-color: #D90429;
+
+            /* https://coolors.co/a03944-aca45b-edf2f4-7a6847-181410 */
+            background-color: #BC3944;
+            background-color: #ADA651;
+            background-color: #7A6847;
+            background-color: #1E1814;
         }
 
         body {
@@ -45,18 +70,18 @@
             margin: 0;
         }
 
-        .menu {
+        .sec-menu {
             box-sizing: content-box;
             background-color: #EDF2F4;
-            position: sticky;
+            /* position: sticky;
             top: 0;
-            /* position: ; */
-            z-index: 100;
+            z-index: 100; */
         }
 
-        .menu>.empresa {
+        .sec-menu>.empresa {
             display: inline-block;
             height: 100px;
+            width: 100%;
             /* box-sizing: border-box; */
             /* margin: 0; */
             padding: 0 50px;
@@ -65,42 +90,49 @@
 
         }
 
-        .menu .logo {
+        .sec-menu .logo {
             /* display: flex; */
             /* align-items: center; */
             /* float: left; */
             height: 100%;
-            padding: 6%;
+            padding: 15px;
             box-sizing: border-box;
+            text-align: center;
+            /* width: 100%; */
         }
 
-        .menu img {
+        .sec-menu img {
             height: 100%;
             /* margin: 15px 0px; */
             box-sizing: border-box;
         }
 
-        .menu .navigation {
+        .sec-menu .navigation {
             /* vertical-align: middle; */
             height: 70px;
             padding: 0 50px;
-            background-color: #2B2D42;
+            background-color: #1E1814;
             box-sizing: content-box;
             /* overflow: hidden; */
-            border-bottom: solid 2px #8D99AE;
+            border-bottom: solid 1.5px #7A6847;
             /* box-shadow: 0px 3px 5px #8D99AE */
             overflow: hidden;
+            justify-content: center;
         }
 
-        .menu ul {
+        .sec-menu ul {
+            display: flex;
             margin: 0;
             padding: 0;
+            height: 100%;
             box-sizing: border-box;
             /* height: 100%; */
-            border: none
+            /* border: none; */
+            /* background-color: #D90429; */
+            justify-content: center;;
         }
 
-        .menu li {
+        .sec-menu li {
             display: inline-block;
             float: left;
             /* box-sizing: border-box; */
@@ -109,7 +141,7 @@
 
         }
 
-        .menu li a {
+        .sec-menu li a {
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -120,31 +152,30 @@
             box-sizing: border-box;
             /* margin: 5px 5px 5px 0px; */
             height: 60px;
-            padding: 15px;
+            padding: 15px 20px;
             /* background-color: #D90429; */
-            margin: 5px 5px 5px 0px;
+            margin: 5px 2.5px;
+            background-color: #181410;
         }
 
-        .menu li a:hover {
-            background-color: #D90429;
+        .sec-menu li a:hover {
+            background-color: #BC3944;
             font-weight: 600;
         }
 
-        .welcome {
+        .sec-welcome {
             margin: 0;
             height: 500px;
-            background-image: url("img/welcome.jpg");
-            background-repeat: no-repeat;
+            background-image: url("img/back-welcome-2.png");
+            /* background-repeat: no-repeat; */
             background-size: cover;
             background-position: center;
             position: relative;
-
-            /* border: solid 0.05px magenta; */
         }
 
-        .welcome .text {
+        .sec-welcome .text {
             box-sizing: border-box;
-            background-color: rgba(43, 45, 66, 0.8);
+            background-color: #181410d8;
             padding: 30px 30px;
             float: right;
             position: absolute;
@@ -154,36 +185,111 @@
             color: #EDF2F4;
             /* border-bottom: solid 2px #D90429; */
             /* border-right: solid 2px #D90429; */
-            box-shadow: 2px 2px #2B2D42
+            box-shadow: 2px 2px rgba(122, 104, 71, 0.466)
         }
 
-        .welcome .welcome-title {
-            font-size: 3em;
-            display: block;
-            margin: 0;
-            margin-bottom: 10px;
-            font-weight: bold;
-            border: none;
-            text-shadow: 2px 2px #2B2D42;
-        }
-
-        .welcome .company-name {
+        .sec-welcome .welcome-title {
             font-size: 2em;
             display: block;
             margin: 0;
             font-weight: normal;
+            margin-bottom: 10px;
             border: none;
-            text-shadow: 2px 2px #2B2D42;
+            text-shadow: 2px 2px #1E1814;
+        }
+
+        .sec-welcome .company-name {
+            font-size: 3em;
+            display: block;
+            margin: 0;
+            font-weight: bold;
+            border: none;
+            text-shadow: 2px 2px #1E1814;
+        }
+
+        .content {
+            margin: 0px 150px;
+            padding: 80px 0px;
+        }
+
+        .sec-title {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* width: 100%; */
+            box-sizing: border-box;
+            /* background-color: aqua; */
+        }
+
+        .sec-title h2 {
+            position: relative;
+        }
+
+        .sec-title-underline {
+            width: 200px;
+            height: 3px;
+            position: absolute;
+            right: -30px;
+            bottom: -5px;
+            background-color: #BC3944;
+            /* display: block; */
+            /* border-bottom: solid 1px #2B2D42; */
+            /* box-sizing: content-box; */
+
+        }
+
+        .sec-our-team {
+            /* box-sizing: border-box; */
+        }
+
+        .sec-our-team .description {
+            margin: 0;
+            padding: 0px 150px 30px 150px;
+        }
+
+        .sec-our-team .sec-team {
+            display: flex;
+            justify-content: center;
+            padding: 25px 25px;
+            /* border-collapse: collapse; */
+        }
+
+        .sec-our-team .sec-team .box-team {
+            display: inline-block;
+            background-color: rgb(214, 204, 92);
+            color: #181410;
+            text-align: center;
+            box-sizing: border-box;
+            width: 30%;
+            border-collapse: collapse;
+            margin: 25px;
+            border-radius: 35px;
+            border-bottom: solid 5px #2B2D42;
+        }
+
+        .box-team img {
+            width: 100%;
+            border-bottom: solid 5px #EDF2F4;
+            border-radius: 30px;
+        }
+
+        .box-team .p-description {
+            font-size: 1em;
+            line-height: 1.1em;
+            padding: 5px;
+            margin: 25px 10px;
+            font-weight: 300;
+            font-style: italic;
         }
     </style>
 </head>
 
 <body>
-    <header id="home" class="menu">
+    <header id="home" class="sec-menu">
         <div class="empresa">
             <div class="logo">
                 <a href="#home">
-                    <img src="img/logo.png" alt="floop">
+                    <img src="img/logo2.png" alt="floop">
                 </a>
             </div>
         </div>
@@ -198,60 +304,61 @@
             </ul>
         </nav>
     </header>
-    <section class="welcome">
+    <section class="sec-welcome">
         <div class="text">
             <p class="welcome-title">Welcome to</p>
             <h1 class="company-name">Company Name</h1>
         </div>
-        <img class="background" src="" alt="">
     </section>
-    <section class="our-team">
+    <section class="sec-our-team">
         <div class="content">
-            <div class="section-title">
-                <h2>Our team leaders</h2>
+            <div class="sec-title">
+                <h2>Our team leaders
+                    <div class="sec-title-underline"></div>
+                </h2>
             </div>
-            <div class="details">
+            <div class="description">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
-        </div>
-        <div class="team">
-            <div class="box-team">
-                <img src="" alt="">
-                <div class="name">
-                    <h3>Hugo Silva</h3>
+            <div class="sec-team">
+                <div class="box-team">
+                    <img src="img/got1.png" alt="">
+                    <div class="p-name">
+                        <h3>Hugo Silva</h3>
+                    </div>
+                    <div class="p-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
+                            efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                    </div>
                 </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
-                        efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                <div class="box-team">
+                    <img src="img/got3.png" alt="">
+                    <div class="p-name">
+                        <h3>Imanol Arias</h3>
+                    </div>
+                    <div class="p-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
+                            efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box-team">
-                <img src="" alt="">
-                <div class="name">
-                    <h3>Imanol Arias</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
-                        efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
-                </div>
-            </div>
-            <div class="box-team">
-                <img src="" alt="">
-                <div class="name">
-                    <h3>Javier Bardem</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
-                        efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                <div class="box-team">
+                    <img src="img/got2.png" alt="">
+                    <div class="p-name">
+                        <h3>Javier Bardem</h3>
+                    </div>
+                    <div class="p-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus nibh, luctus in metus a,
+                            efficitur mollis odio. Morbi sit amet luctus magna. Nullam.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="our-numbers">
+    <section class="sec-our-numbers">
         <div class="content">
             <div>
                 <p class="number">2500</p>
@@ -277,7 +384,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="sec-contact-us">
         <div class="content">
             <div class="section-title">
                 <h2>Our team leaders</h2>
