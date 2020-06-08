@@ -1,10 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-
-//bibliotecas exclusivas do c++
-#include <iostream>
 #include <string>
 
 void a63_ImprimeVetor(int* vetor, int tamanho);
