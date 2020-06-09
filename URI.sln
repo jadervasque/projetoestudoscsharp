@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExerciciosCursoC", "Exercic
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExerciciosCursoCPP", "ExerciciosCursoCPP\ExerciciosCursoCPP.vcxproj", "{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstudosAlgoritmos", "EstudosAlgoritmos\EstudosAlgoritmos.csproj", "{E4B42D22-14AA-492F-9C38-5397D7AFECBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,18 @@ Global
 		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x64.Build.0 = Release|x64
 		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x86.ActiveCfg = Release|Win32
 		{3C43999E-055C-46B1-B8D3-3D12FA1B85E7}.Release|x86.Build.0 = Release|Win32
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Debug|x64.Build.0 = Debug|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Release|x64.ActiveCfg = Release|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Release|x64.Build.0 = Release|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{E4B42D22-14AA-492F-9C38-5397D7AFECBA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
