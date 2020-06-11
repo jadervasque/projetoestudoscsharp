@@ -22,7 +22,7 @@ for (let i = 0; i < 2; i++) {
 
 let totalPagar = 0;
 for (let i = 0; i < 2; i++) {
-    totalPagar += itens[i].valorTotal
+    totalPagar += itens[i].va
 }
 
 const resultado = `VALOR A PAGAR: R$ ${totalPagar.toFixed(2)}`
