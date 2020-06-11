@@ -1,4 +1,4 @@
-const log = a => console.log(a)
+log = a => console.log(a)
 
 const pessoa = {
     nome: 'Ana',
@@ -9,10 +9,15 @@ const pessoa = {
     }
 }
 
+
+
 const { nome, idade } = pessoa
 console.log(nome, idade);
 
 const { nome: n, idade: i } = pessoa
 console.log(n, i);
 
-const {sobrenome, bemHumorada}
+const { sobrenome, bemHumorada = true } = pessoa
+console.log(sobrenome, bemHumorada)
+
+const {ene}
