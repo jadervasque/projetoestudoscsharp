@@ -1,3 +1,4 @@
+
 log = a => console.log(a)
 
 const pessoa = {

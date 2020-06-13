@@ -40,9 +40,9 @@ function URI() {
 /**
  * Passo 1:
  * Criar 2 funções:
- *   Uma para ler um texto e retorná-lo como inteiro;
- *   Outra para ler um texto e retorná-lo como float;
- *   Utilizar a notação arrow no formato para cada função criada;
+ *   Uma para ler um texto e retorná-lo como inteiro: int();
+ *   Outra para ler um texto e retorná-lo como float: float();
+ *   Utilizar a notação arrow no formato reduzido para cada função criada;
  *   Dúvidas, consultar a aula 'funcao2.js'
  */
 {
@@ -69,7 +69,7 @@ function URI() {
 /**
  * Passo 3:
  * Ciar uma função que recebe o array dos itens e realize a soma
- *   do produto (multiplicação) da quantidade pelo valor uitário de cada item;
+ *   do produto (multiplicação) da quantidade pelo valor unitário de cada item;
  * 
  * @param {Array} itens
  */

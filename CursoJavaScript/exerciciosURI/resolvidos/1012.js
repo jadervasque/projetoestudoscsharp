@@ -56,6 +56,7 @@ function URI() {
  * Criar uma constante na qual os nomes das propriedades e os seus respectivos valores
  *   possuem os nomes das geometrias que serão calculadas as área;
  * Dica: esta constante terá 5 propriedades, equivalentes às 5 geometrias da saída do programa;
+ * Este passo cria o que chamamos de ENUM;
  */
 {
     const Geometria = {
@@ -69,8 +70,10 @@ function URI() {
 
 /**
  * Passo 3:
+ * Nome:  'CalcularArea'
+ * Saída: valor da área no tipo float
  * Criar uma função que receba como parâmetros:
- *   (a) uma variável do tipo da constante criada no Passo 1;
+ *   (a) uma variável do tipo da constante criada no Passo 1: valores;
  *   (b) uma variável do tipo String;
  * Desestruturar o objeto (a) 'valores' nas variáveis a, b, c;
  * Criar um switch que recebe como valor o parâmetro (b) String informando o cálculo que será
@@ -103,9 +106,10 @@ function URI() {
 
 /**
  * Passo 4:
+ * Nome: 'CalcularEImprimirArea'
  * Criar uma função que receba como parâmetros:
- *   (a) uma variável do tipo da constante criada no Passo 1;
- *   (b) uma variável do tipo da constante criada no Passo 2;
+ *   (a) uma variável do tipo da constante criada no Passo 1: valores;
+ *   (b) uma variável do tipo String;
  * Esta função irá calcular o valor da área da geometria informada no parâmetro (b) e
  *   imprimir o resultdado no formado: 'NOME_DA_GEOMETRIA: 0.000'
  * Dica: a função criada no Passo 3 será utilizada nesta função;
@@ -124,8 +128,8 @@ function URI() {
 /**
  * Passo 5:
  * Chamar a função criada no Passo 4 informando como parâmetros:
- *   (a) o objeto criado no Passo 1;
- *   (b) a propriedade da geometria desejada para cálculo da área e impressão;
+ *   (a) o objeto criado no Passo 1: valores;
+ *   (b) a propriedade da geometria desejada para cálculo da área e impressão: Geometrias;
  * O parâmetro (b) deve ser uma das propriedadas do objeto criado no Passo 2;
  * Dica: este passo terá 5 linhas;
  */
