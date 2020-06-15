@@ -140,7 +140,7 @@ function CalcularBloco(bloco) {
         while (bloco.includes(Operation.SOMA) || bloco.includes(Operation.SUBTRACAO)) {
             debugger
             if (IsOneOperationAndType(bloco) == Operation.SUBTRACAO) {
-
+                
             }
             const operation3 = BuscarPrimeiraOperacao(Operation.SOMA, Operation.SUBTRACAO, bloco)
             const expressao = FabricarExpressao(bloco, bloco.indexOf(operation3))
