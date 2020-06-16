@@ -10,3 +10,4 @@ const at = (t) => {
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8')
 var lines = input.split('\n')
+var lines = input.split('\n')
