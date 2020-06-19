@@ -10,6 +10,6 @@ function arraySum(numbers) {
         sum += numbers[i];
     }
     return sum;
-}
 
+}
 console.log(arraySum([1, 2, 3, 4, 5]))

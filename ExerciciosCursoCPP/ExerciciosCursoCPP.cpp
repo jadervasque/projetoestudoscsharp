@@ -25,20 +25,176 @@ int main() {
         aula();
         cout << "\n\n";
     }
-    system("pause");
+    //system("pause");
 
     return 0;
 }
 
-#pragma   region a54_AlocarVetor
+void aula() {}
+
+#pragma region a71_EstruturasStruct
+typedef struct Fruta {
+    string Cor;
+    string Nome;
+};
+
+void a71_EstruturasStruct() {
+
+    Fruta* fruta = new Fruta;
+    fruta->Cor = "Amarela";
+    fruta->Nome = "Banana";
+    char text[255];
+    sprintf(text, "%s %s", fruta->Nome.c_str(), fruta->Cor.c_str());
+    cout << text << endl;
+}
+#pragma endregion
+
+#pragma region a70_StructEmStruct
+typedef struct Data {
+    int Dia;
+    int Mes;
+    int Ano;
+};
+
+typedef struct Aluno {
+    int Id;
+    Data Nascimento;
+};
+
+void a70_StructEmStruct() {
+
+    Aluno a;
+    a.Id = 15;
+    a.Nascimento.Ano = 1996;
+    a.Nascimento.Mes = 1;
+    a.Nascimento.Dia = 17;
+    char text[255];
+    sprintf(text, "%02d/%02d/%04d", a.Nascimento.Dia, a.Nascimento.Mes, a.Nascimento.Ano);
+    cout << text << endl;
+}
+#pragma endregion
+
+#pragma region a69_Struct
+
+struct  Word {
+    int index;
+    char letter;
+    char text[255];
+};
+
+void a69_Struct() {
+
+    struct Word pp;
+    pp.index = 0;
+    pp.letter = 'c';
+    strcpy(pp.text, "Palavrinha");
+    cout << "Ordem: " << pp.index << ", Primeira letra: " << pp.letter << ", Primeira palavra: " << pp.text;
+
+    cout << endl;
+    cout << endl;
+    cout << "Lista de Struct";
+
+    int t = 3;
+    struct Word* lp = new Word[t];
+    for (int i = 0; i < t; i++) {
+        lp[i].index = i;
+        lp[i].letter = (char)(i + 65);
+        strcpy(lp[i].text, "Word " + i);
+    }
+
+    for (int i = 0; i < t; i++) {
+        cout << "I: " << lp[i].index << ", L: " << lp[i].letter << ", T: " << lp[i].text << endl;
+    }
+
+
+}
+
+#pragma endregion
+
+void a68_AlocacaoMatrizesCPP() {
+
+    int linhas, colunas;
+    cout << "Digite o número de linhas: ";
+    cin >> linhas;
+    cout << "Digite o número de colunas: ";
+    cin >> colunas;
+
+    int** matriz;
+
+    matriz = (int**) new int[linhas];
+    for (int i = 0; i < linhas; i++) {
+        matriz[i] = (int*) new int[colunas];
+    }
+
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            matriz[i][j] = j;
+            cout << matriz[i][j];
+        }
+        cout << endl;
+    }
+
+    free(matriz);
+}
+
+void a67_AlocacaoMatrizes() {
+
+    int linhas, colunas;
+    cout << "Digite o número de linhas: ";
+    cin >> linhas;
+    cout << "Digite o número de colunas: ";
+    cin >> colunas;
+
+    int** matriz;
+
+    matriz = (int**)malloc(linhas * sizeof(int*));
+    for (int i = 0; i < linhas; i++) {
+        matriz[i] = (int*)malloc(colunas * sizeof(int));
+    }
+
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            matriz[i][j] = j;
+            cout << matriz[i][j];
+        }
+        cout << endl;
+    }
+
+    free(matriz);
+}
+
+#pragma region a66_AlocarVetor_CPP
+
+#include <new>
+
+void a66_AlocarVatorCPP() {
+
+    int tamanho, i;
+
+    cout << "Digite o tamanho: ";
+    cin >> tamanho;
+
+    //criar ponteiro que recebe novo vetor vazio
+    int* vetor = new int[tamanho];
+
+    //modificando e imprimindo valores
+    for (i = 0; i < tamanho; i++) {
+        vetor[i] = i;
+        cout << vetor[i] << endl;
+    }
+}
+
+#pragma endregion
+
+#pragma   region a65_AlocarVetor
 int* a65_AlocarVetor(int tamanho) {
-    
+
     int* aux;
     aux = (int*)malloc(tamanho * sizeof(int));
     return aux;
 }
 
-void aula() {
+void a65_AlocacaoDinamicaVetores() {
 
     int* vetor, tamanho;
     cout << "Digite o tamanho do vetor desejado: ";
@@ -48,6 +204,9 @@ void aula() {
     vetor = a65_AlocarVetor(tamanho);
     a63_PreencheVetor(vetor, tamanho);
     a63_ImprimeVetor(vetor, tamanho);
+
+    //limpar vetor da memória
+    free(vetor);
 }
 #pragma endregion
 
